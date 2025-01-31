@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const [emojiArray, setEmojiArray] = useState([]);
+  const [emojiArray, setEmojiArray] = useState<{ id: number; emoji: string; x: number; y: number; speedY: number; opacity: number; }[]>([]);
 
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {

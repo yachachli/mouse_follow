@@ -6,7 +6,7 @@ export default function Home() {
   const [emojiArray, setEmojiArray] = useState([]);
 
   useEffect(() => {
-    const handleMouseMove = (event) => {
+    const handleMouseMove = (event: MouseEvent) => {
       const emojis = ['😀', '🔥', '🎉', '🚀', '💀', '👾', '🐉', '⚡', '💫', '🌀', '🦄'];
       const newEmoji = {
         id: Math.random(),
